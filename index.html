@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UR5 Robot Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="canvas-container"></div>
+        <div id="controls">
+            <h2>Joint Controls</h2>
+            <div class="control-group">
+                <label>Base Rotation (Axis 1):</label>
+                <input type="range" id="base_to_shoulder" min="-180" max="180" value="0">
+                <span id="base_to_shoulder-value">0°</span>
+            </div>
+            <div class="control-group">
+                <label>Shoulder (Axis 2):</label>
+                <input type="range" id="shoulder_to_upper_arm" min="-180" max="180" value="0">
+                <span id="shoulder_to_upper_arm-value">0°</span>
+            </div>
+            <div class="control-group">
+                <label>Elbow (Axis 3):</label>
+                <input type="range" id="upper_arm_to_forearm" min="-180" max="180" value="0">
+                <span id="upper_arm_to_forearm-value">0°</span>
+            </div>
+            <div class="control-group">
+                <label>Wrist 1 (Axis 4):</label>
+                <input type="range" id="forearm_to_wrist_1" min="-180" max="180" value="0">
+                <span id="forearm_to_wrist_1-value">0°</span>
+            </div>
+            <div class="control-group">
+                <label>Wrist 2 (Axis 5):</label>
+                <input type="range" id="wrist_1_to_wrist_2" min="-180" max="180" value="0">
+                <span id="wrist_1_to_wrist_2-value">0°</span>
+            </div>
+            <div class="control-group">
+                <label>Wrist 3 (Axis 6):</label>
+                <input type="range" id="wrist_2_to_wrist_3" min="-180" max="180" value="0">
+                <span id="wrist_2_to_wrist_3-value">0°</span>
+            </div>
+        </div>
+    </div>
+    <script src="urdf_parser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

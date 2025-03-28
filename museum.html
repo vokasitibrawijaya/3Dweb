@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Museum Exhibition</title>
+    <link rel="stylesheet" href="museum.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/PointerLockControls.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="canvas-container"></div>
+        <div id="info-panel">
+            <h2>Virtual Museum Exhibition</h2>
+            <div id="exhibit-info">
+                <h3>Welcome to the Exhibition</h3>
+                <p>Click on exhibits to learn more about them.</p>
+            </div>
+        </div>
+    </div>
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading Exhibition...</p>
+    </div>
+    <script src="museum.js"></script>
+</body>
+</html> 
